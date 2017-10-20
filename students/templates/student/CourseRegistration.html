@@ -75,7 +75,14 @@
                     <td>4</td>
                     <td>Dr Rajeev xSmart</td>
                 </tr>
-
+		{{% for i in context %}}
+		    <tr>
+			   <td> <input type = "checkbox" class="list-group-item"  /></td>
+                    <td>{{i.course_Name}}</td>
+                    <td>5</td>
+                    <td>Dr Rajeev xSmart</td> 
+		    </tr>
+		    {{% endfor %}}
             </table>
             <button class="btn button btn-primary">SUBMIT</button>
         </div> 
